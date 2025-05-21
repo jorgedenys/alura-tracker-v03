@@ -45,6 +45,7 @@ import IProjeto from '@/interfaces/IProjeto';
 import { useStore } from '@/store';
 import { defineComponent } from 'vue';
 import { EXCLUIR_PROJETO }  from '@/store/tipo-mutacoes';
+import { OBTER_PROJETOS } from '@/store/tipo-acoes';
 
 export default defineComponent({
     name: 'ListaProjetosView',
@@ -55,6 +56,7 @@ export default defineComponent({
     },
     computed: {
         projetos(): IProjeto[] {
+            //this.store.dispatch(OBTER_PROJETOS)
             return this.store.state.projetos as IProjeto[]
         }
     },
