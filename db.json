@@ -1,8 +1,30 @@
 {
-    "projetos": [
-        {
-            "id": 1,
-            "nome": "Alura Tracker"
-        }
-    ]
+  "projetos": [
+    {
+      "id": "1",
+      "nome": "Alura Tracker 3.0"
+    },
+    {
+      "id": "fd67",
+      "nome": "Plano de Estudos"
+    }
+  ],
+  "tarefas": [
+    {
+      "id": "1",
+      "duracaoEmSegundos": "7200",
+      "descricao": "Estudando a implementação do projeto Alura Tracker 3.0",
+      "projeto": {
+        "id": "1"
+      } 
+    },
+    {
+      "id": "1",
+      "duracaoEmSegundos": "14400",
+      "descricao": "Estudar Vue.js, typescript | Estudar Java e Spring Boot",
+      "projeto": {
+        "id": "fd67"
+      } 
+    }
+  ]
 }
