@@ -12,19 +12,39 @@
   "tarefas": [
     {
       "id": "1",
-      "duracaoEmSegundos": "7200",
-      "descricao": "Estudando a implementação do projeto Alura Tracker 3.0",
+      "duracaoEmSegundos": 14400,
+      "descricao": "Estudando Vue.js e TypeScript",
       "projeto": {
-        "id": "1"
-      } 
+        "id": "fd67",
+        "nome": "Plano de Estudos"
+      }
     },
     {
-      "id": "1",
-      "duracaoEmSegundos": "14400",
-      "descricao": "Estudar Vue.js, typescript | Estudar Java e Spring Boot",
+      "id": "2",
+      "duracaoEmSegundos": 14400,
+      "descricao": "Estudando Java e Spring Boot",
       "projeto": {
-        "id": "fd67"
-      } 
+        "id": "fd67",
+        "nome": "Plano de Estudos"
+      }
+    },
+    {
+      "id": "f4b5",
+      "duracaoEmSegundos": 5,
+      "descricao": "[WIP] Evoluindo o projeto",
+      "projeto": {
+        "id": "1",
+        "nome": "Alura Tracker 3.0"
+      }
+    },
+    {
+      "id": "b508",
+      "duracaoEmSegundos": 4,
+      "descricao": "Testando o projeto",
+      "projeto": {
+        "id": "1",
+        "nome": "Alura Tracker 3.0"
+      }
     }
   ]
 }
