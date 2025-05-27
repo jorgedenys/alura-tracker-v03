@@ -45,6 +45,15 @@
         "id": "1",
         "nome": "Alura Tracker 3.0"
       }
+    },
+    {
+      "id": "3862",
+      "duracaoEmSegundos": 1,
+      "descricao": "Estudos - Parte 01",
+      "projeto": {
+        "id": "fd67",
+        "nome": "Plano de Estudos"
+      }
     }
   ]
 }

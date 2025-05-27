@@ -47,7 +47,7 @@ export default defineComponent({
     },
     computed: {
         projetos(): IProjeto[] {
-            return this.store.state.projetos as IProjeto[]
+            return this.store.state.projeto.projetos as IProjeto[]
         }
     },
     methods: {
