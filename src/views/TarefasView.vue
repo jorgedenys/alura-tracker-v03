@@ -5,6 +5,20 @@
             Você não está muito produtivo hoje :(
         </BoxTarefas>
         
+        <div class="field">
+            <p class="control has-icons-left">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Digite para filtrar"
+                  v-model="filtro"
+                />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+            </p>
+        </div>
+
         <TarefasRealizadas 
           v-for="(tarefa, index) in tarefas"
           :key="index"
@@ -59,14 +73,21 @@ export default defineComponent({
     data() {
         return {
             store: useStore(),
-            tarefaSelecionada: null as ITarefa | null
+            tarefaSelecionada: null as ITarefa | null,
+            filtro: ''
         }
     },
     computed: {
         tarefas(): ITarefa[] {
             this.store.dispatch(OBTER_PROJETOS)
             this.store.dispatch(OBTER_TAREFAS)
-            return this.store.state.tarefas as ITarefa[]
+            
+            // Método filter para realizar o filtro da lista
+            // Retorna todas as tarefas quando não tiver filtro: !this.filtro
+            // ou retorna as tarefas que incluem o texto informado  
+            // no filtro: t.descricao.includes(this.filtro)
+            return this.store.state.tarefas
+                .filter((t) => !this.filtro || t.descricao.includes(this.filtro)) as ITarefa[]
         },
         listaEstaVazia(): boolean {
             return this.tarefas.length === 0
